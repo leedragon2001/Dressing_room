@@ -71,12 +71,12 @@ const renderData = async (typeName) => {
     let content = "";
     filterData.forEach((element) => {
       content += `
-          <div class="row">
-              <div class="col-md-3 my-3">
-                  <img src="${element.imgSrc_png}" alt="" width="300"/>
+          
+              <div class="col-3 my-3 item">
+                  <img src="${element.imgSrc_png}" alt=""/>
                   <button class="btn btn-success trial" data-id="${element.id}">Thử</button>
                </div>
-          </div>
+          
       `;
     });
     getEle("show").innerHTML = content;
